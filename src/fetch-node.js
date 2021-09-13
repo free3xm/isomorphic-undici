@@ -1,6 +1,6 @@
 "use strict";
 
-var {fetch} = require('undici');
+var {fetch} = require("./undici/index");
 module.exports = function(url, options) {
   if (/^\/\//.test(url)) {
     url = 'https:' + url;

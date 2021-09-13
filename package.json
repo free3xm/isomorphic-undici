@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-undici",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "isomorphic undici fetch",
   "browser": "dist/fetch-browser.js",
   "main": "dist/fetch-node.js",

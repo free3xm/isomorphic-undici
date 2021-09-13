@@ -1,0 +1,18 @@
+{
+  "name": "isomorphic-undici",
+  "version": "1.0.2",
+  "description": "isomorphic undici fetch",
+  "browser": "fetch-browser.js",
+  "main": "fetch-node.js",
+  "types": "index.d.ts",
+  "author": "free3",
+  "license": "MIT",
+  "homepage": "free3xm/isomorphic-undici",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/free3xm/isomorphic-undici.git"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

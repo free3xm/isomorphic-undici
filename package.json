@@ -1,10 +1,14 @@
 {
   "name": "isomorphic-undici",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "isomorphic undici fetch",
-  "browser": "fetch-browser.js",
-  "main": "fetch-node.js",
+  "browser": "dist/fetch-browser.js",
+  "main": "dist/fetch-node.js",
   "types": "index.d.ts",
+  "scripts": {
+    "build": "microbundle -i src/fetch-node.js -o dist/fetch-node.js --no-sourcemap -f cjs --generateTypes false && microbundle -i src/fetch-browser.js -o dist/fetch-browser.js --no-sourcemap -f cjs --generateTypes false",
+    "release": "npm run build -s && npm publish"
+  },
   "author": "free3",
   "license": "MIT",
   "homepage": "free3xm/isomorphic-undici",
@@ -14,5 +18,8 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.3"
   }
 }

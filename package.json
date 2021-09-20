@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-undici",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "isomorphic undici fetch",
   "browser": "src/fetch-browser.js",
   "main": "src/fetch-node.js",
@@ -8,6 +8,7 @@
   "scripts": {
     "release": "npm publish"
   },
+  "keywords": ["undici", "isomorphic-fetch", "isomorphic-undici-fetch", "isomorphic-undici"],
   "author": "free3",
   "license": "MIT",
   "homepage": "https://github.com/free3xm/isomorphic-undici#readme",

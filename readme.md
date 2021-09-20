@@ -21,7 +21,7 @@ import fetch from 'isomorphic-undici';
  `Node 16+`
 
 To use with webpack, you need to add to your webpack config for node (`target:node`):
-- the external dependency `"stream/web"`
+- webpack `>=v5.53` or add the external dependency `"stream/web"`
 - experiments `asyncWebAssembly: true` 
 - add [`webassembly-loader`](https://www.npmjs.com/package/webassembly-loader) (npm i webassembly-loader)
 
@@ -30,7 +30,7 @@ To use with webpack, you need to add to your webpack config for node (`target:no
 ### example
 ```
   externals: {
-    'stream/web': 'commonjs stream/web',
+    'stream/web': 'commonjs stream/web', // for webpack lowest than v5.53
   },
   experiments: {
     asyncWebAssembly: true,
